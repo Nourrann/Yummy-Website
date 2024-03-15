@@ -1,0 +1,188 @@
+/* Start General Styles */
+body {
+  background-color: #f5e8dd;
+  color: #6a788e;
+  overflow: hidden;
+}
+.contact-us .form-control:focus {
+  border-color: #e4bfc6;
+  box-shadow: 0 0 0 0.25rem #eed3d9b9;
+}
+/* End General Styles */
+
+/*^ Start loading-screen Style */
+
+.inner-loading-screen {
+  z-index: 2;
+  background-color: #e4bfc6;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-screen {
+  z-index: 4;
+  background-color: #e4bfc6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*^ End loading-screen Style */
+
+/** Start SideNav Style **/
+.sideNavBar {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 3;
+}
+.sideNavBar .sideNavBarContent {
+  background-color: #eed3d9;
+}
+.sideNavBar .sideNavBarContent .links li {
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.sideNavBar .links li:hover {
+  color: #31425d;
+  transform: translateX(20px);
+}
+.logo {
+  width: 50px;
+  cursor: pointer;
+}
+.sideNavBar .sideNavBarHeader {
+  background-color: #e4bfc6;
+  text-align: center;
+}
+.sideNavBar span {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.sideNavBar span:hover {
+  color: #31425d;
+}
+/** End SideNav Style **/
+
+/*& Start Meals Style */
+.meals .meal-card {
+  border: 2px solid #263b5e;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.meals .meal-card-layer h3 {
+  color: #263b5e;
+  font-size: 40px;
+}
+.meals .meal-card-layer p {
+  color: #263b5e;
+}
+.meals .meal-card-layer {
+  height: 100%;
+  width: 100%;
+  background-color: #eed3d9b9;
+  top: 100%;
+  left: 0px;
+  transition: all 0.4s;
+  /* padding: 10px; */
+}
+.meal-card:hover .meal-card-layer {
+  top: 0;
+}
+.areaCard {
+  transition: 0.4s all;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.areaCard:hover {
+  background-color: #263b5e;
+  color: #e4bfc6;
+}
+
+/*& End Meals Style */
+
+/** Start Instructions Style */
+.meals .instructions .ingredientImg {
+  border: 2px solid #263b5e;
+  border-radius: 10px;
+}
+.meals .instructions p {
+  font-size: 18px;
+}
+.alert {
+  margin-inline: 5px;
+  width: fit-content;
+  display: inline-block;
+  padding: 5px 15px;
+}
+.contact-us .container .row .is-valid:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+.contact-us .container .row .is-invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+.sourceBtn,
+.youtubeBtn {
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 5px 25px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+.sourceBtn {
+  background-color: #e4bfc6;
+  color: #263b5e;
+  border: 2px solid #263b5e;
+}
+.sourceBtn:hover {
+  color: #e4bfc6;
+  background-color: #263b5e;
+  border: 2px solid #e4bfc6;
+}
+.youtubeBtn {
+  color: #e4bfc6;
+  background-color: #263b5e;
+  border: 2px solid #e4bfc6;
+}
+.youtubeBtn:hover {
+  background-color: #e4bfc6;
+  color: #263b5e;
+  border: 2px solid #263b5e;
+}
+/** End Instructions Style */
+
+/*^ Start Search Style ^*/
+.search .form-control {
+  border: none;
+  border-radius: 4px;
+  border-bottom: 2px solid #263b5e;
+}
+.search .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 0 transparent;
+  /* border: ; */
+}
+/*^ End Search Style ^*/
+
+/** Start Contact Us Style **/
+
+.contact-us .submitBtn {
+  margin-top: 20px;
+  padding: 5px 25px;
+  border-radius: 20px;
+  background-color: #e4bfc6;
+  color: #263b5e;
+  font-weight: 500;
+  border: 2px solid #263b5e;
+  transition: all 0.4s;
+}
+.contact-us .submitBtn:hover {
+  background-color: #263b5e;
+  color: #e4bfc6;
+}
+/** End Contact Us Style **/

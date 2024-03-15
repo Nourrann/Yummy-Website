@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0">
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <!--* Start Side Navbar Section*-->
+    <div class="sideNavBar min-vh-100 position-fixed d-flex top-0">
+      <div
+        class="sideNavBarContent d-flex flex-column justify-content-between vh-100 p-4"
+      >
+        <div class="links overflow-hidden">
+          <ul class="list-unstyled">
+            <li class="position-relative" onclick="showSearchInputs();closeNav();">
+              Search
+            </li>
+            <li class="position-relative" onclick="getCategories();closeNav();">
+              Categories
+            </li>
+            <li class="position-relative" onclick="getArea();closeNav();">Area</li>
+            <li class="position-relative" onclick="getIngredients();closeNav();">
+              Ingredients
+            </li>
+            <li class="position-relative" onclick="showContactUs();closeNav();">
+              Contact Us
+            </li>
+          </ul>
+        </div>
+        <div class="sideNavBarFooter text-center">
+          <div class="socialIcons mb-3">
+            <span><i class="fa-brands fa-facebook fa-xl me-2"></i></span>
+            <span><i class="fa-brands fa-twitter fa-xl me-2"></i></span>
+            <span><i class="fa-solid fa-globe fa-xl"></i></span>
+          </div>
+          <div class="footerText">
+            <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sideNavBarHeader d-flex flex-column justify-content-between py-5 px-2"
+      >
+        <img class="logo" src="imgs/logo.png" alt="logo" />
+        <span class="open-close d-block"
+          ><i class="fa-openClose fa-solid fa-bars fa-2x"></i
+        ></span>
+        <span class="open-close close d-none"
+          ><i class="fa-solid fa-xmark fa-2x"></i
+        ></span>
+        <div class="sideNavHeaderIcons">
+          <span
+            ><i class="fa-solid fa-globe d-block m-auto mb-2 fa-xl"></i
+          ></span>
+          <span><i class="fa-solid fa-share-nodes fa-xl"></i></span>
+        </div>
+      </div>
+    </div>
+    <!--* End Side Navbar Section*-->
+
+    <!--^ Start Search Section -->
+    <section class="search">
+      <div class="container w-75" id="searchContainer"></div>
+    </section>
+    <!--^ End Search Section -->
+
+    <!--& Start Meals Section &-->
+    <section class="meals min-vh-100 position-relative">
+      <div class="inner-loading-screen top-0 start-0 bottom-0 end-0">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+      </div>
+      <div class="container">
+        <div class="instructions">
+          <div class="row py-5 g-4" id="rowData"></div>
+        </div>
+      </div>
+    </section>
+    <!--& End Meals Section &-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
