@@ -186,3 +186,18 @@ body {
   color: #e4bfc6;
 }
 /** End Contact Us Style **/
+
+@media screen and (max-width: 992px) {
+  .container {
+    /* padding: 100px; */
+    /* margin-inline: 500px; */
+  }
+  .meals .meal-card {
+    margin: auto;
+    width: 70% !important;
+  }
+  .instructions {
+    width: 70%;
+    margin-left: 100px;
+  }
+}
