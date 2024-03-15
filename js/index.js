@@ -51,7 +51,9 @@ $(".sideNavBar .open-close").click(function () {
 
 // Add an event listener to the logo image
 document.querySelector(".logo").addEventListener("click", function () {
+  rowData.innerHTML = "";
   $(".inner-loading-screen").fadeIn(100);
+  searchContainer.innerHTML = "";
   starting("");
   $(".inner-loading-screen").fadeOut(300);
 });
